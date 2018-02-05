@@ -242,6 +242,10 @@ Note: Ubuntu 12.04 is too old to support. Debian jessie may also be too old, and
     make
     make install
     ```
+    Then change directory to parent directory()
+    ```
+    cd ..
+    ```
     You need to specify `cmake -Dfreenect2_DIR=$HOME/freenect2/lib/cmake/freenect2` for CMake based third-party application to find libfreenect2.
 * Set up udev rules for device access: `sudo cp ../platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/`, then replug the Kinect.
 * Run the test program: `./bin/Protonect`
